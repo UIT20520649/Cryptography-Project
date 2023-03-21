@@ -37,5 +37,22 @@ Figure 1. Uploading File Process
 Figure 2. Downloading File Process
 </p>
 
+## Deploy Plan
+
+### Tools and resources
+|   Tools and resources   | Description |
+| ----------- | ----------- |
+|Python | Programming Language|
+| tkinter | Python Library for GUI | 
+| PyCrypto| Python Library for Cryptography |
+| MySQL | Data Storage | 
+| Google Drive API | Interact with Google Drive Service | 
 
 
+### Duty chart
+
+|   Name   | ID | Duty | 
+| ----------- | ----------- | ----------- |
+| Nguyễn Trần Anh Đức | 21521964 | |
+| Nguyễn Hữu Tiến | 21520479 | |
+| Lê Thanh Duẩn | 19521370 | |
