@@ -1,0 +1,2 @@
+bg_path = "..\\assets\\login_form_bg.png"
+print(bg_path)
