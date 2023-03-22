@@ -43,7 +43,7 @@ Figure 2. Downloading File Process
 |   Tools and resources   | Description |
 | ----------- | ----------- |
 |Python | Programming Language|
-| tkinter | Python Library for GUI | 
+| flask | Python Library for Python Web Application | 
 | PyCrypto| Python Library for Cryptography |
 | MySQL | Data Storage | 
 | Google Drive API | Interact with Google Drive Service | 
