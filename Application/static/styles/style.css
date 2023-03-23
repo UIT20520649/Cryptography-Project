@@ -11,11 +11,13 @@ body {
 }
 
 .loginContainer {
-    background-color: #333F6A;
-    width: 300px;
+    background-color: #617bd8;
+    background-blend-mode:multiply;
+    opacity: 100;
+    width: 400px;
     max-width: 100%;
     text-align: center;
-    padding: 10px 15px 40px;
+    padding: 10px 30px 40px;
     border-radius: 30px;
     position: relative;
     z-index: 1;
@@ -23,7 +25,7 @@ body {
 
 .form {
     background-color: #F5F5F5;
-    padding: 100px 20px 40px 300px;
+    padding: 50px 50px 50px 50px;
     margin-top: 20px;
     border-radius: 20px;
     position: relative;
@@ -47,25 +49,27 @@ body {
 .group {
     position: relative;
     display: grid;
-    grid-template-columns: 30px auto;
-    padding: 10px 0;
-    margin-top: 30px;
+    grid-template-columns: auto auto;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     border-bottom: 1px solid #555;
 }
-
+/* Login Head */
 .group:nth-child(1) {
     grid-template-columns: 100%;
     border-bottom: none;
 }
-
+/* Username */
 .group:nth-child(1) span {
     opacity: 0.5;
     font-size: x-small;
-    padding: 0 20px;
+    padding: auto, auto;
 }
-
+/* Password */
 .group:nth-child(3) {
-    grid-template-columns: 30px auto 30px;
+    grid-template-columns: auto auto;
+
 }
 
 .group input {
@@ -76,14 +80,15 @@ body {
 
 .group label {
     position: absolute;
-    left: 35px;
+    left: 0px;
     top: 10px;
     transition: 0.5s;
 }
 
+
 .group input:focus~label,
 .group input:not(:placeholder-shown)~label {
-    top: -20px;
+    top: -10px;
 }
 
 .group:nth-child(3) input[type="text"]~.fa-eye-slash {
@@ -94,46 +99,23 @@ body {
     display: none;
 }
 
-/* .loginBtn {
-    background-color: #F5F5F5;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, 50%);
-    border: 10px solid #333F6A;
-    position: relative;
-}
+
 
 .loginBtn button {
-    width: 200%;
-    height: 150%;
-    border-radius: 20%;
+    background-color: #617bd8;
+    position: relative;
+    padding: 20px 50px;
+    border-radius: 20px;
     border: none;
-    background-image: linear-gradient(to bottom right, #DA95F5, #F465F3);
-    color: #fff;
+    transform: translate(0,0);
 }
 
-.loginBtn::before {
-    content: '';
-    position: absolute;
-    left: calc(100% + 10px);
-    top: 50%;
-    width: 70px;
-    height: 20px;
-    border-bottom-left-radius: 15px;
-    box-shadow: -30px 0px 0 #333F6A;
-    z-index: -1;
+
+
+/* .loginBtn::before {
+
 }
 
 .loginBtn::after {
-    content: '';
-    position: absolute;
-    right: calc(100% + 10px);
-    top: 50%;
-    width: 70px;
-    height: 20px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 30px 0px 0 #333F6A;
-    z-index: -1;
+
 } */
