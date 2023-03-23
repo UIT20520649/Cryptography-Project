@@ -13,9 +13,9 @@ In this scenario, you are using a cloud service (Dropbox, Google Drive, Azure, e
 
 | Subject     | Description |
 | ----------- | ----------- |
-| Protected Assets | User's digital assets       |
-|Related-Party | Assets's owner, cloud Service, assets's related company|
-|Security Goal | Prevent leaked user's documents from being viewed|
+| Protected Assets | User digital assets       |
+|Related-Party | Assets owner, cloud Service, assets related company|
+|Security Goal | Prevent leaked user documents from being viewed|
 
 ## Solution
 
