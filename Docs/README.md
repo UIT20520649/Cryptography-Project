@@ -21,10 +21,10 @@ In this scenario, you are using a cloud service (Dropbox, Google Drive, Azure, e
 
 To solve the problem we metioned before, increase data security is necessaries. Therefore, using double encryption technique using AES and RSA algorithms to secure the data before uploading to the cloud service. The figures below will illustrate the process of uploading and downloading secure file using the mentioned method.
 
-Here is how it work, in Figure 1 we can see the file is encrypted with AES algorithm first, then the AES key will be encrypted and attach to the file before upload to the cloud.
+Here is how it work, in Figure 1 we can see the file is encrypted with AES algorithm first, then the AES key will be encrypted with RSA Public Key and then attach to the file before upload to the cloud.
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/92283038/227442920-38a5208d-f469-49b7-adb6-b106af609547.png">
-<p align="center">Figure 1. Uploading Process</p>
+<p align="center">Figure 1. Encryption Process</p>
 </p>
 First when the user register a new account, the Key Generator will generate a RSA key pair for the user as showed in Figure 2.
 <p align="center"> 
@@ -32,6 +32,11 @@ First when the user register a new account, the Key Generator will generate a RS
 <p align="center">Figure 2. KeyGen Process</p>
 </p>
 
+For decryption, user will provide the RSA Private Key, with that we can retrieve the AES Key for decrypting the file.
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/92283038/227451178-e4f374e3-8c88-437d-8d22-1d2dfb63194b.png">
+<p align="center">Figure 3. Decryption Process</p>
+</p>
 
 
 
