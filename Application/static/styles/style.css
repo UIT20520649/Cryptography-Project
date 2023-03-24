@@ -1,4 +1,3 @@
-
 body {
     min-height: 100vh;
     margin: 0;
@@ -12,7 +11,7 @@ body {
 
 .loginContainer {
     background-color: #617bd8;
-    background-blend-mode:multiply;
+    background-blend-mode: multiply;
     opacity: 100;
     width: 400px;
     max-width: 100%;
@@ -52,20 +51,23 @@ body {
     grid-template-columns: auto auto;
     padding: 10px 10px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-bottom: 1px solid #555;
 }
+
 /* Login Head */
 .group:nth-child(1) {
     grid-template-columns: 100%;
     border-bottom: none;
 }
+
 /* Username */
 .group:nth-child(1) span {
     opacity: 0.5;
     font-size: x-small;
     padding: auto, auto;
 }
+
 /* Password */
 .group:nth-child(3) {
     grid-template-columns: auto auto;
@@ -75,7 +77,7 @@ body {
 .group input {
     background-color: transparent;
     border: none;
-    outline: none;
+    10 outline: none;
 }
 
 .group label {
@@ -99,23 +101,37 @@ body {
     display: none;
 }
 
+.group:nth-child(3) input[type="confirm password"]~.fa-eye {
+    display: none;
+}
+
 
 
 .loginBtn button {
     background-color: #617bd8;
     position: relative;
-    padding: 20px 50px;
+    padding: 10px 50px;
     border-radius: 20px;
     border: none;
-    transform: translate(0,0);
+    transform: translate(0, 0);
+}
+
+.sign_up {
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.sign_up a {
+
+    color: #555;
+    cursor: pointer;
 }
 
 
 
 /* .loginBtn::before {
-
 }
-
 .loginBtn::after {
-
 } */
