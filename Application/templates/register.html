@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
 </head>
 <body>
+    <style>
+        body{
+            background-image: url({{url_for('static',filename='assets/Background.png')}});
+        }   
+    </style>
+        <div class="loginContainer">
 
+            <div class="form">
+                <div class="group">
+                    <h1>Register</h1>
+                    <span>
+                        NT219.N22.ATCL
+                    </span>
+                </div>
+                <div class="group">
+                    <!-- <i class="fa-regular fa-user"></i> -->
+                    <input type="text" placeholder=" " id="email" autocomplete="off">
+                    <label for="email">Email</label>
+                </div>
+                <div class="group">
+                    <!-- <i class="fa-regular fa-user"></i> -->
+                    <input type="text" placeholder=" " id="name" autocomplete="off">
+                    <label for="name">Username</label>
+                </div>
+                <div class="group">
+                    <!-- <i class="fa-solid fa-lock"></i> -->
+                    <input type="password" placeholder=" " id="password" autocomplete="off">
+                    <i class="fa-regular fa-eye" onclick="changeTypePassword()"></i>
+                    <i class="fa-regular fa-eye-slash" onclick="changeTypePassword()"></i>
+                    <label for="password">Password</label>
+                </div>
+                <div class="group">
+                    <!-- <i class="fa-solid fa-lock"></i> -->
+                    <input type="password" placeholder=" " id="confirm password" autocomplete="off">
+                    <i class="fa-regular fa-eye" onclick="changeTypePassword()"></i>
+                    <i class="fa-regular fa-eye-slash" onclick="changeTypePassword()"></i>
+                    <label for="confirm password">Confirm Password</label>
+                </div>
+                <div class="loginBtn">
+                    <button><i class="fa-solid fa-arrow-right">SUBMIT</i></button>
+                </div>
+            </div>
+   
+        </div>
+        <script>
+            function changeTypePassword() {
+                document.getElementById('password').type = document.getElementById('password').type == 'text' ? 'password' : 'text';
+            }
+        </script>
 
 </html>
