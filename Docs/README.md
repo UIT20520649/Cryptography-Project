@@ -21,21 +21,19 @@ In this scenario, you are using a cloud service (Dropbox, Google Drive, Azure, e
 
 To solve the problem we metioned before, increase data security is necessaries. Therefore, using double encryption technique using AES and RSA algorithms to secure the data before uploading to the cloud service. The figures below will illustrate the process of uploading and downloading secure file using the mentioned method.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/92283038/226259242-a8667334-87dd-4cc0-a289-30cafa94037d.png" />
+Here is how it work, in Figure 1 we can see the file is encrypted with AES algorithm first, then the AES key will be encrypted and attach to the file before upload to the cloud.
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/92283038/227442920-38a5208d-f469-49b7-adb6-b106af609547.png">
+<p align="center">Figure 1. Uploading Process</p>
+</p>
+First when the user register a new account, the Key Generator will generate a RSA key pair for the user as showed in Figure 2.
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/92283038/227447623-0ba64281-6f37-4ba4-ac0e-8027bbe80dc2.png">
+<p align="center">Figure 2. KeyGen Process</p>
 </p>
 
-<p align="center">
-Figure 1. Uploading File Process
-</p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/92283038/226261577-c98380e3-52ab-479c-9b51-2b5089a8969d.png" />
-</p>
 
-<p align="center">
-Figure 2. Downloading File Process
-</p>
 
 ## Deploy Plan
 
@@ -43,7 +41,7 @@ Figure 2. Downloading File Process
 |   Tools and resources   | Description |
 | ----------- | ----------- |
 |Python | Programming Language|
-| flask | Python Library for Python Web Application | 
+| flask | Python Framework for Python Web Application | 
 | PyCrypto| Python Library for Cryptography |
 | MySQL | Data Storage | 
 | Google Drive API | Interact with Google Drive Service | 
