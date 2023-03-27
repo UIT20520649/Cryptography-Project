@@ -5,6 +5,26 @@
     <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}"
 </head>
 <body>
+    <div class="fixed-header">
+        <div class ="logo"><a><img src="{{url_for('static',filename='assets/favicon.png')}}"></a></div>
+        <div class="container">
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="sign-menu"> 
+                    <ul>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
     <style>
         body{
             background-image: url({{url_for('static',filename='assets/Background.png')}});

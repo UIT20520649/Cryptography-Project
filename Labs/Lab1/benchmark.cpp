@@ -249,7 +249,7 @@ int main(int argc, char *argv[])
     const double ghz = cpuFreq / 1000 / 1000 / 1000;
     const double mbs = bytes / elapsedTimeInSeconds / 1024 / 1024;
     const double cpb = elapsedTimeInSeconds * cpuFreq / bytes;
-
+    wcout << d.AlgorithmName << " benchmark\n";
     wcout << "  " << ghz << " GHz cpu frequency"  << std::endl;
     wcout << "  " << cpb << " cycles per byte (cpb)" << std::endl;
     wcout << "  " << mbs << " MiB per second (MiB)" << std::endl;
