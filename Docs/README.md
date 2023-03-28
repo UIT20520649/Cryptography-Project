@@ -40,7 +40,7 @@ For decryption, user will provide the RSA Private Key, with that we can retrieve
 
 
 
-## Deploy Plan
+## Implementation Plan
 
 ### Tools and resources
 |   Tools and resources   | Description |
@@ -52,10 +52,10 @@ For decryption, user will provide the RSA Private Key, with that we can retrieve
 | Google Drive API | Interact with Google Drive Service | 
 
 
-### Duty chart
+### Tasks chart
 
-|   Name   | ID | Duty | 
-| ----------- | ----------- | ----------- |
-| Nguyễn Trần Anh Đức | 21521964 | |
-| Nguyễn Hữu Tiến | 21520479 | |
-| Lê Thanh Duẩn | 19521370 | |
+|   Name   | ID | UX/UI Design | Authentication | Cloud API | Data Encryption/Decryption | Project Management | Presentation |
+| ----------- | ----------- |  :----------: | :----------: | :----------: |:----------: |:----------: |:----------: |
+| Nguyễn Trần Anh Đức | 21521964 | X| | X | X| X |
+| Nguyễn Hữu Tiến | 21520479 | X | | | X |  | X | 
+| Lê Thanh Duẩn | 19521370 | | X | X| |  |
