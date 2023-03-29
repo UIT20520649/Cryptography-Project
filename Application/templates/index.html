@@ -3,33 +3,32 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
-    <div class="fixed-header">
-        <div class ="logo"><a><img src="{{url_for('static',filename='assets/favicon.png')}}"></a></div>
-        <div class="container">
-            <nav>
-                <div class="menu">
-                    <ul>
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="sign-menu"> 
-                    <ul>
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="fix-header">
+        <div class="navbar">
+            <img src="{{(url_for('static',filename='assets/favicon.png'))}}">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+
+            <ul class="lrbar">
+                <li><a href="/login">Login</a></li>
+                <li><a class="registerbtn" href="/register">Register</a></li>
+            </ul>
         </div>
     </div>
-    <style>
-        body{
-            background-image: url({{url_for('static',filename='assets/Background.png')}});
-        }   
-    </style>
+    <div class="homepage-content">
+        <p class="project-name">SECLOUDITY</p>
+        <p class="description">EFFICIENT AND SECURE FILE TRANSFER IN CLOUD</p>
+    </div>
+
 </body>
 
 </html>
