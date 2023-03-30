@@ -206,7 +206,7 @@ int main(){
     wcout << "============================ GCM MODE ============================\n";
     plaintext = "GCM Mode Test";
     wcout << "Plaintext : " << string_to_wstring(plaintext) << endl;
-    AES_Mode = MODE::CTR;
+    AES_Mode = MODE::GCM;
     // Encryption
     Encrypt_Process(prog,AES_Mode,plaintext,cipher,key,iv);
     // Decryption
